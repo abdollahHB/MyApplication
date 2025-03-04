@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom et Prenom "
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:id="@+id/nomprenom"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="15dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/phn" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:padding="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresse"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ville"
+        android:padding="15dp"/>
+
+    <Spinner
+        android:id="@+id/villes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/villes"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Envoyer"
+        android:padding="25dp"/>
+
+</LinearLayout>
